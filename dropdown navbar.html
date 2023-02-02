@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .can {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+        background-color: brown;
+      }
+      li {
+        float: left;
+        padding: 10px 20px;
+      }
+      .can li a {
+        text-decoration: none;
+        color: aliceblue;
+      }
+      .can1 {
+        position: relative;
+        display: inline-block;
+      }
+      .can3 {
+        position: absolute;
+        display: none;
+        background-color: black;
+        overflow: auto;
+      }
+      .can3 a {
+        display: block;
+        color: black;
+      }
+      .can1:hover .can3 {
+        display: block;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="can">
+      <li><a href="#home">home</a></li>
+      <li><a href="#news">news</a></li>
+      <li><a href="#content">content</a></li>
+      <li>
+        <div class="can1">
+          <a href="#about">about</a>
+          <div class="can3">
+            <a href="#biz">biz</a>
+            <a href="#galeri">galeri</a>
+            <a href="#iletişim">iletişim</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>

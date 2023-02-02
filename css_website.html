@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .can {
+        background-color: bisque;
+        text-align: center;
+        width: 100%;
+        height: 200px;
+        padding: 25px;
+        box-sizing: border-box;
+      }
+      .can1 {
+        width: 100%;
+
+        background-color: black;
+        padding: 15px;
+      }
+      .can1 a {
+        color: bisque;
+        text-decoration: none;
+        padding: 20px;
+      }
+      .can1 a:hover {
+        background-color: bisque;
+        color: black;
+      }
+
+      .can4 {
+        float: left;
+        background-color: rgb(212, 246, 234);
+        height: 350px;
+        padding: 15px;
+      }
+
+      .can4.side {
+        width: 25%;
+      }
+      .can4.middle {
+        width: 50%;
+      }
+      .can3::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      h1 {
+        text-align: center;
+      }
+      .footer {
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        background-color: bisque;
+        padding: 10px;
+        display: block;
+        margin-top: 0px;
+
+        font-size: larger;
+      }
+      @media screen and (max-width: 600px) {
+        .can4.side {
+          width: 100%;
+        }
+        .can4.middle {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="can">
+      <h1>Header</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, impedit.
+      </p>
+    </div>
+    <div class="can1">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#content">Content</a>
+    </div>
+    <div class="can3">
+      <div class="can4 side">
+        <h1>Left Side</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+          quos adipisci quasi vitae nostrum quod ut qui architecto delectus ad
+          facere reprehenderit eveniet magnam impedit sunt voluptas esse
+          doloribus modi in voluptates fuga accusamus, veritatis sed! Minima
+          temporibus eum voluptas velit modi maiores aliquid aliquam?
+        </p>
+      </div>
+      <div class="can4 middle">
+        <h1>Middle Side</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ex quia,
+          id impedit, aperiam eveniet qui, culpa exercitationem ut incidunt
+          dignissimos quas blanditiis natus iste accusantium minus sed et
+          repudiandae odit praesentium doloribus! Ratione, numquam, non
+          dignissimos nostrum odit est molestias consequuntur modi expedita
+          repellendus dolor esse beatae perspiciatis. Itaque aut soluta alias!
+          Recusandae nihil, quas consectetur quia vel facere rem deserunt iste,
+          ipsa officiis dolor illum suscipit voluptates. Voluptatem quod
+          blanditiis minima amet obcaecati ipsum error quas dolore beatae
+          necessitatibus possimus velit hic placeat, asperiores molestias.
+          Reprehenderit obcaecati ipsa sequi molestias temporibus debitis fugit
+          doloribus vero. Repellendus, quis earum?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+          unde animi veniam at soluta excepturi ab architecto nobis harum
+          possimus molestiae corporis labore porro hic ex dolores facilis, eaque
+          aut temporibus debitis! Sapiente rem enim ducimus libero distinctio
+          aspernatur commodi asperiores. Cum voluptas perferendis veniam!
+        </p>
+      </div>
+      <div class="can4 side">
+        <h1>Right Side</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+          repellendus ab sequi repellat, placeat repudiandae architecto
+          temporibus voluptas nesciunt, illum esse laboriosam ipsum et maiores
+          fugiat expedita quidem illo. Illum amet neque fuga incidunt
+          dignissimos architecto necessitatibus earum, rem dolor ex nisi
+          deserunt modi laboriosam.
+        </p>
+      </div>
+    </div>
+
+    <p class="footer"><b>Footer</b></p>
+  </body>
+</html>

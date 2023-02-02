@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :target {
+        color: brown;
+        background-color: cadetblue;
+        padding: 10px 15px;
+        text-align: center;
+      }
+      .tab div {
+        display: none;
+      }
+      .tab a {
+        display: block;
+      }
+      .tab div:target {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <p><a href="#can1">1.içerik</a></p>
+    <p><a href="#can2">2.icerik</a></p>
+
+    <p id="can1">Sefer Can</p>
+    <p id="can2">Muhammed</p>
+    <div class="tab">
+      <a href="#link1">Link1</a>
+      <a href="#link2">Link2</a>
+      <a href="#link3">Link3</a>
+      <div id="link1">
+        <h1>Can</h1>
+      </div>
+      <div id="link2">
+        <h1>Sefer Can</h1>
+      </div>
+      <div id="link3">
+        <h1>Muhammed Sefer Can</h1>
+      </div>
+    </div>
+  </body>
+</html>

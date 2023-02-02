@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input.can {
+        width: 100%;
+        padding: 10px 10px 10px 40px;
+        margin: 15px 0;
+        border: 2px solid red;
+        box-sizing: border-box;
+        color: yellowgreen;
+        border-radius: 8px;
+        background-image: url("search.png");
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position: 5px;
+      }
+      input[type="text"]:focus {
+        background-color: darkslateblue;
+      }
+      input[type="number"]:focus {
+        background-color: firebrick;
+      }
+      select {
+        width: 30%;
+        padding: 15px 10px;
+        font-size: large;
+      }
+      .cannn {
+        color: aqua;
+        margin: 10px;
+        background-color: brown;
+        padding: 5px;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="can">adınız:</label>
+    <input class="can" type="text" name="can" placeholder="adınız..." />
+
+    <label for="yas">yaşınız:</label>
+    <input class="can" type="number" name="yas" min="15" max="30" />
+
+    <textarea name="" id="" cols="30" rows="10">sefer cannnnnn</textarea>
+    <br />
+
+    <select name="ülkeler">
+      <option value="tr">Türkiye</option>
+      <option value="fr">Fransa</option>
+      <option value="en">England</option>
+    </select>
+    <br />
+    <input class="cannn" type="button" value="button" />
+  </body>
+</html>
